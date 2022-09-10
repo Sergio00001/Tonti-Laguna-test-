@@ -1,0 +1,480 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;
+
+500&display=swap);
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  color: #848199;
+  line-height: 1;
+  font-family: "Poppins";
+  font-size: 0.9375rem;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+  font-family: "Poppins";
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  font-weight: 500;
+}
+
+.lock body {
+  overflow: hidden;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F5F5FA), color-stop(44.15%, #F2DAD5), to(#A1ABD6));
+  background: -o-linear-gradient(top, #F5F5FA 0%, #F2DAD5 44.15%, #A1ABD6 100%);
+  background: linear-gradient(180deg, #F5F5FA 0%, #F2DAD5 44.15%, #A1ABD6 100%);
+}
+
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.wrapper > * {
+  min-width: 0;
+}
+
+/*
+(i) Стили будут применяться ко 
+всем классам содержащим *__container
+Например header__container, main__container и т.д.
+Снипет (HTML): cnt
+*/
+
+[class*=__container] {
+  max-width: 73.125rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+
+[class*=-ibg] {
+  position: relative;
+}
+
+[class*=-ibg] img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+[class*=-ibg_contain] img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header__container {
+  max-width: 937px;
+  margin-top: 2.5625rem;
+}
+
+.header__title {
+  color: #231D4F;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.header__text_and_controlls {
+  margin-top: 1.5625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4rem;
+}
+
+.header__text {
+  max-width: 584px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.header__controlls {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 22px;
+}
+
+.header__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 13px 24px;
+  border-radius: 24px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #3B3472;
+  line-height: 22px;
+}
+
+.header__btn._fw {
+  width: 100%;
+}
+
+.header__btn.active {
+  background-color: #BB6BD9;
+  color: #FFFFFF;
+}
+
+.header__content {
+  background: rgba(255, 255, 255, 0.64);
+  border-radius: 26px;
+  padding: 40px;
+  margin-bottom: 4.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 207px;
+  position: relative;
+  z-index: 99;
+}
+
+.header__card.popular {
+  background: #231D4F;
+  -webkit-box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.295755);
+          box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.295755);
+  border-radius: 26px;
+  padding: 20px 30px;
+  max-width: 280px;
+  -webkit-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+          transform: scale(1.15);
+  bottom: 30px;
+}
+
+.card__price {
+  margin-bottom: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.card__price__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  color: #231D4F;
+}
+
+.card__price__title.popular {
+  color: #FFFFFF;
+}
+
+.card__price__title.year__price {
+  display: none;
+}
+
+.card__price__range {
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.card__price__range.popular {
+  color: #FFFFFF;
+}
+
+.card__header {
+  font-size: 28px;
+  line-height: 42px;
+  color: #231D4F;
+}
+
+.card__header.popular {
+  color: #FFFFFF;
+}
+
+.card__description {
+  font-size: 15px;
+  line-height: 22px;
+  max-width: 232px;
+  margin: 14px 0px;
+}
+
+.card__description.popular {
+  color: #FFFFFF;
+}
+
+.card__features {
+  margin-bottom: 5.1875rem;
+}
+
+.card__professional__features {
+  margin-bottom: 3.25rem;
+}
+
+.popular__features {
+  margin-bottom: 1.3125rem;
+}
+
+.card__feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.card__feature__text {
+  margin-left: 10px;
+}
+
+.card__feature__text.popular {
+  color: #FFFFFF;
+}
+
+.card__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 11px 55px;
+  border-radius: 24px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #FFFFFF;
+  font-size: 15px;
+  line-height: 22px;
+  background-color: #231D4F;
+}
+
+.card__btn._fw {
+  width: 100%;
+}
+
+.card__btn.popular {
+  background-color: #BB6BD9;
+  color: #FFFFFF;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.popular__card__tag {
+  text-align: center;
+  background: #403879;
+  border-radius: 13.5px;
+  padding: 7px 17px;
+  color: #BB6BD9;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 15px;
+  max-width: 121px;
+  margin-left: auto;
+  margin-bottom: 1.25rem;
+}
+
+.nav__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 10px 30px;
+  background: #BB6BD9;
+  border-radius: 24px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #FFFFFF;
+  line-height: 22px;
+  margin: 28px 0px;
+}
+
+.nav__btn._fw {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .header__title {
+    text-align: center;
+  }
+
+  .header__text_and_controlls {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .header__text {
+    max-width: 288px;
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .header__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 32px 8px 8px 8px;
+  }
+
+  .header__card {
+    margin-bottom: 3rem;
+  }
+
+  .header__card:last-child {
+    margin-bottom: 0rem;
+  }
+
+  .header__card.popular {
+    bottom: 0;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    max-width: 272px;
+  }
+
+  .card__btn.popular {
+    padding: 11px 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .nav__btn {
+    display: none;
+  }
+
+  .nav__logo {
+    margin: 40px 0px;
+  }
+}
+
+@media (any-hover: hover) {
+  .header__btn.active:hover {
+    background: #A847CC;
+  }
+
+  .card__btn:hover {
+    background: #A847CC;
+  }
+
+  .card__btn.popular:hover {
+    background: #A847CC;
+  }
+
+  .nav__btn:hover {
+    background: #A847CC;
+  }
+}

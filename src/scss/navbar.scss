@@ -1,0 +1,36 @@
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__btn {
+    display: inline-flex;
+    padding: 10px 30px;
+    background: #BB6BD9;
+    border-radius: 24px;
+    transition: 0.3s ease;
+    color: #FFFFFF;
+    line-height: 22px;
+    margin: 28px 0px;
+
+    @media (any-hover: hover) {
+        &:hover {
+            background: #A847CC;
+        }
+    }
+
+    &._fw {
+        width: 100%;
+    }
+}
+
+@media(max-width:425px) {
+    .nav__btn {
+        display: none;
+    }
+
+    .nav__logo {
+        margin: 40px 0px;
+    }
+}
